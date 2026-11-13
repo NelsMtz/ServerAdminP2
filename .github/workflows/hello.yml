@@ -1,0 +1,9 @@
+   name: serverless-demo
+   on: push
+   jobs:
+     run:
+       runs-on: ubuntu-latest
+       steps:
+         - uses: actions/checkout@v4
+         - run: echo "Code ran on a GitHub server I never set up or managed"
+         - run: uname -a
